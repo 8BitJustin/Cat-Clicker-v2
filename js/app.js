@@ -1,8 +1,13 @@
-const image = document.getElementById('kitteh-img');
+const images = document.getElementsByClassName('kitteh-img');
 let counter = document.getElementById('counter');
+const kittehOneName = document.getElementById('kitteh-one-name').innerHTML = 'Tyler';
+const kittehTwoName = document.getElementById('kitteh-two-name').innerHTML = 'Skyler';
 
-// Adds event listner to image. On click, console says 'clicked', and the counter increments by 1
-image.addEventListener('click', function() {
-    console.log('clicked!');
-    counter.innerText++;
-});
+for (let i = 0; i < images.length; i++) {
+    // Adds event listner to image. On click, console says 'clicked', and the counter increments by 1
+    images[i].addEventListener('click', function() {
+        console.log('clicked!');
+        counter.innerText++;
+    });
+  }
+
