@@ -39,11 +39,11 @@ li {
     left: 170px;
 }
 
-.img-display-div {
+#img-display-div {
     padding-top: 100px;
 }
 
-.img-display-name {
+#img-display-name {
     position: absolute;
     top: 120;
     left: 240px;
@@ -51,7 +51,7 @@ li {
     text-shadow: 0 0 5px #000;
 }
 
-.img-display-count {
+#img-display-count {
     position: absolute;
     bottom: 120px;
     right: 260px;

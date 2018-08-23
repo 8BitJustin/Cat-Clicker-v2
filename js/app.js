@@ -1,6 +1,8 @@
 const imgSwap = function(e) {
     console.log('clicked');
     document.getElementById('img-display-id').src = e.src;
+    document.getElementById('img-display-count').innerText = e.previousElementSibling.innerText;
+    document.getElementById('img-display-name').innerText = e.parentNode.firstElementChild.innerText;
 };
 
 
