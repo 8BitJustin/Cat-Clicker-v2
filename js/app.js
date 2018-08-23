@@ -1,19 +1,16 @@
+const displayImg = document.getElementById('img-display-id');
+let displayCount = document.getElementById('img-display-count');
+
 const imgSwap = function(e) {
     console.log('clicked');
-    document.getElementById('img-display-id').src = e.src;
+    displayImg.src = e.src;
     document.getElementById('img-display-count').innerText = e.previousElementSibling.innerText;
     document.getElementById('img-display-name').innerText = e.parentNode.firstElementChild.innerText;
 };
 
-
-
-
-
-
-
-
-
-
+displayImg.addEventListener('click', function() {
+    displayCount.innerText++;
+})
 
 
 /**
