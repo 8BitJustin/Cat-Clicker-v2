@@ -26,6 +26,7 @@ li {
 .img-list-name {
     position: absolute;
     color: #fff;
+    text-shadow: 0 0 5px #000;
     top: 6px;
     left: 12px;
 }
@@ -33,12 +34,29 @@ li {
 .img-list-count {
     position: absolute;
     color: #fff;
+    text-shadow: 0 0 5px #000;
     top: 164px;
     left: 170px;
 }
 
 .img-display-div {
     padding-top: 100px;
+}
+
+.img-display-name {
+    position: absolute;
+    top: 120;
+    left: 240px;
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+
+.img-display-count {
+    position: absolute;
+    bottom: 120px;
+    right: 260px;
+    color: white;
+    text-shadow: 0 0 5px #000;
 }
 
 .img-display {
