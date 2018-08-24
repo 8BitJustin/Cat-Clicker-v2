@@ -1,5 +1,10 @@
 const displayImg = document.getElementById('img-display-id');
 const imgSmall = document.querySelectorAll('.img-small');
+let imgSmallOne = document.getElementById('img-list-count-id-1');
+let imgSmallTwo = document.getElementById('img-list-count-id-2');
+let imgSmallThree = document.getElementById('img-list-count-id-3');
+let imgSmallFour = document.getElementById('img-list-count-id-4');
+let imgSmallFive = document.getElementById('img-list-count-id-5');
 let displayCount = document.getElementById('img-display-count');
 let listCount = 0;
 
@@ -15,8 +20,25 @@ for(let i = 0; i < imgSmall.length; i++) {
 
 displayImg.addEventListener('click', function() {
     displayCount.innerText++;
-    listCount++;
-    console.log(listCount);
+    switch() {
+        case 'http://127.0.0.1:5500/img/kitteh.jpeg':
+            imgSmallOne.innerText++;
+            break
+        case 'img/kittehtwo.jpg':
+            imgSmallTwo.innerText++;
+            break
+        case 'img/kittehthree.jpg':
+            imgSmallThree.innerText++;
+            break
+        case 'img/kittehfour.jpg':
+            imgSmallFour.innerText++;
+            break
+        case 'img/kittehfive.jpg':
+            imgSmallFive.innerText++;
+            break
+        default:
+            console.log('default');
+      };
 });
 
 
