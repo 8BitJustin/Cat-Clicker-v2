@@ -18,6 +18,10 @@ li {
     position: relative;
 }
 
+#intro {
+    padding-top: 160px;
+}
+
 .img-list-item img {
     width: 200px;
     padding-bottom: 20px;
