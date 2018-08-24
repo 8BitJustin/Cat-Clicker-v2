@@ -1,16 +1,39 @@
 const displayImg = document.getElementById('img-display-id');
+const imgSmall = document.querySelectorAll('.img-small');
 let displayCount = document.getElementById('img-display-count');
+let listCount = 0;
 
-const imgSwap = function(e) {
-    console.log('clicked');
-    displayImg.src = e.src;
-    document.getElementById('img-display-count').innerText = e.previousElementSibling.innerText;
-    document.getElementById('img-display-name').innerText = e.parentNode.firstElementChild.innerText;
+for(let i = 0; i < imgSmall.length; i++) {
+    imgSmall[i].addEventListener('click', function() {
+        console.log('clicked');
+        displayImg.src = imgSmall[i].src;
+        listCount = imgSmall[i].previousElementSibling.innerText;
+        document.getElementById('img-display-count').innerText = listCount;
+        document.getElementById('img-display-name').innerText = imgSmall[i].parentNode.firstElementChild.innerText;
+    });
 };
 
 displayImg.addEventListener('click', function() {
     displayCount.innerText++;
-})
+    listCount++;
+    console.log(listCount);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
