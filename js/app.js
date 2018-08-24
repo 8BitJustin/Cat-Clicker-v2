@@ -27,22 +27,37 @@ displayImg.addEventListener('click', function() {
         case 'img-one':
             console.log('one');
             imgSmallOne.innerText++;
+            if (imgSmallOne.innerText == 100) {
+                alert('You really love this kitteh!');
+            };
             break
         case 'img-two':
             console.log('two');
             imgSmallTwo.innerText++;
+            if (imgSmallTwo.innerText == 100) {
+                alert('You really love this kitteh!');
+            };
             break
         case 'img-three':
             console.log('three');
             imgSmallThree.innerText++;
+            if (imgSmallThree.innerText == 100) {
+                alert('You really love this kitteh!');
+            };
             break
         case 'img-four':
             console.log('test four');
             imgSmallFour.innerText++;
+            if (imgSmallFour.innerText == 100) {
+                alert('You really love this kitteh!');
+            };
             break
         case 'img-five':
             console.log('test five');
             imgSmallFive.innerText++;
+            if (imgSmallFive.innerText == 100) {
+                alert('You really love this kitteh!');
+            };
             break
         default:
             console.log('default');
